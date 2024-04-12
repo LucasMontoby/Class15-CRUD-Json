@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Usuario</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <ul>
+      <% productos.forEach(producto => { %>
+        <div><%= producto.marca %></div>
+        <div><%= producto.modelo %></div>
+        <div><%= producto.precio %></div>
+      <% }) %>
+    </ul>
+  </main>
+  <footer>
+    <p>Derechos reservados &copy; 2024</p>
+  </footer>
+</body>
+</html>
