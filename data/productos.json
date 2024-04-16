@@ -1,37 +1,50 @@
 [
-{
-    "id": 1,
-    "marca":  "Ford",
-    "modelo": "Fiesta",
-    "precio": 1000001
-},
-
-{
-    "id": 2,
-    "marca":  "Ford",
-    "modelo": "Fiesta",
-    "precio": 1000002
-},
-
-{
-    "id": 3,
-    "marca":  "Ford",
-    "modelo": "Fiesta",
-    "precio": 1000003
-},
-
-{
-    "id": 4,
-    "marca":  "Ford",
-    "modelo": "Fiesta",
-    "precio": 1000004
-},
-
-{
-    "id": 5,
-    "marca":  "Ford",
-    "modelo": "Fiesta",
-    "precio": 1000005
-}
-
+ {
+  "id": 1,
+  "marca": "Ford",
+  "modelo": "Fiesta",
+  "precio": 1000001
+ },
+ {
+  "id": 2,
+  "marca": "Ford",
+  "modelo": "Fiesta",
+  "precio": 1000002
+ },
+ {
+  "id": 3,
+  "marca": "Ford",
+  "modelo": "Fiesta",
+  "precio": 1000003
+ },
+ {
+  "id": 4,
+  "marca": "Ford",
+  "modelo": "Fiesta",
+  "precio": 1000004
+ },
+ {
+  "id": 5,
+  "marca": "Ford",
+  "modelo": "Fiesta",
+  "precio": 1000005
+ },
+ {
+  "id": 6,
+  "marca": "",
+  "modelo": "",
+  "precio": 0
+ },
+ {
+  "id": 7,
+  "marca": "Crevrolet",
+  "modelo": "Corsa",
+  "precio": "200000"
+ },
+ {
+  "id": 8,
+  "marca": "Chevrolet",
+  "modelo": "Spin",
+  "precio": "3000000"
+ }
 ]
