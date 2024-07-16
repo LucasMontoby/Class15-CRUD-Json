@@ -22,7 +22,7 @@ app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
 
-app.get("/", (req, res) => {
-    res.render("home", { productos: [] });  // Asegúrate de que `productos` esté definido si lo usas en la vista
-});
+// app.get("/", (req, res) => {
+//     res.render("home", { productos: [] });  // Asegúrate de que `productos` esté definido si lo usas en la vista
+// });
 
