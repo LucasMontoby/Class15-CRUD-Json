@@ -31,20 +31,8 @@
  },
  {
   "id": 6,
-  "marca": "",
-  "modelo": "",
-  "precio": 0
- },
- {
-  "id": 7,
   "marca": "Crevrolet",
   "modelo": "Corsa",
-  "precio": "200000"
- },
- {
-  "id": 8,
-  "marca": "Chevrolet",
-  "modelo": "Spin",
-  "precio": "3000000"
+  "precio": "600000"
  }
 ]

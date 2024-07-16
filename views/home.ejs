@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header>
@@ -19,14 +20,24 @@
   <main>
     <ul>
       <% productos.forEach(producto => { %>
-        <div><%= producto.marca %></div>
-        <div><%= producto.modelo %></div>
-        <div><%= producto.precio %></div>
+        <li>
+          <div><%= producto.marca %></div>
+          <div><%= producto.modelo %></div>
+          <div><%= producto.precio %></div>
+          <div class="form-container">
+            <a href="/<%= producto.id %>/edit">Editar</a>
+            <form action="/<%= producto.id %>?_method=DELETE" method="POST" style="display:inline;">
+              <button type="submit">Eliminar</button>
+            </form>
+          </div>
+        </li>
       <% }) %>
     </ul>
   </main>
   
-    <a href="/create">Creación de Vehiculo</a>
+  <div class="form-container">
+    <a href="/create">Creación de Vehículo</a>
+  </div>
 
   <footer>
     <p>Derechos reservados &copy; 2024</p>
