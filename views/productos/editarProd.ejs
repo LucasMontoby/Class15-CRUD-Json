@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Producto</title>
+    <title>Edición de Producto</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Editar Producto</h1>
-    <form action="/<%= producto.id %>?_method=PUT" method="POST">
-        <label for="marca">Marca:</label>
-        <input type="text" id="marca" name="marca" value="<%= producto.marca %>" required>
-        <br>
-        <label for="modelo">Modelo:</label>
-        <input type="text" id="modelo" name="modelo" value="<%= producto.modelo %>" required>
-        <br>
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio" name="precio" value="<%= producto.precio %>" required>
-        <br>
-        <button type="submit">Guardar</button>
-    </form>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Productos</a></li>
+                <li><a href="#">Usuario</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Edición de Producto</h1>
+        <form action="/edit/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" value="<%= producto.marca %>">
+            </div>
+            <div>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" value="<%= producto.modelo %>">
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" value="<%= producto.precio %>">
+            </div>
+            <div>
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen">
+            </div>
+            <button type="submit">Actualizar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
 </body>
 </html>

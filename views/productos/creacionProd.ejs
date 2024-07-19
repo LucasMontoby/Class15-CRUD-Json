@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
+    <title>Creación de Producto</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <form action="/create" method="POST">
-        <div>
-            <label for="marca">Marca: </label>
-            <input type="text" name="marca" id="marca" placeholder="Ingresar Marca"/>
-        </div>
-        <br>
-        <div>
-            <label for="modelo">Modelo: </label>
-            <input type="text" name="modelo" id="modelo" placeholder="Ingresar Modelo"/>
-        </div>
-        <br>
-        <div>
-            <label for="precio">Precio: </label>
-            <input type="number" name="precio" id="precio" placeholder="Ingresar Precio"/>
-        </div>
-        <br>
-        <div>
-            <button type="submit" value="Guardar Producto">Crear Vehiculo</button>
-        </div>
-        <br>
-    </form>
-    <div>
-        <a href="/">Home</a>
-    </div>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Productos</a></li>
+                <li><a href="#">Usuario</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Creación de Producto</h1>
+        <form action="/create" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca">
+            </div>
+            <div>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo">
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio">
+            </div>
+            <div>
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen">
+            </div>
+            <button type="submit">Crear</button>
+        </form>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
 </body>
 </html>
+

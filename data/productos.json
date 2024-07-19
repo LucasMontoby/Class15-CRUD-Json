@@ -3,36 +3,21 @@
   "id": 1,
   "marca": "Ford",
   "modelo": "Fiesta",
-  "precio": 1000001
+  "precio": 1000001,
+  "imagen": "ford_fiesta_1.jpg"
  },
  {
   "id": 2,
   "marca": "Ford",
   "modelo": "Fiesta",
-  "precio": 1000002
+  "precio": 1000002,
+  "imagen": "ford_fiesta_1.jpg"
  },
  {
   "id": 3,
   "marca": "Ford",
   "modelo": "Fiesta",
-  "precio": 1000003
- },
- {
-  "id": 4,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000004
- },
- {
-  "id": 5,
-  "marca": "Ford",
-  "modelo": "Fiesta",
-  "precio": 1000005
- },
- {
-  "id": 6,
-  "marca": "Crevrolet",
-  "modelo": "Corsa",
-  "precio": "600000"
+  "precio": 1000003,
+  "imagen": "ford_fiesta_1.jpg"
  }
 ]
