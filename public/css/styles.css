@@ -1,63 +1,150 @@
+/* styles.css */
+
+/* Estilos básicos del cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Estilo del contenedor principal */
 main {
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo de la lista de productos */
 .producto-lista {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0;
 }
 
 .producto-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 10px;
-    width: calc(33% - 40px);
-    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
 }
 
 .producto-item img {
-    max-width: 100%;
+    width: 100px;
     height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
 }
 
+.producto-item div {
+    flex: 1;
+}
+
+.producto-item h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.producto-item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.producto-item a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.producto-item a:hover {
+    opacity: 0.8;
+}
+
+.producto-item a:nth-of-type(1) {
+    background-color: #007bff;
+}
+
+.producto-item a:nth-of-type(2) {
+    background-color: #dc3545;
+}
+
+/* Estilo del enlace para crear nuevo producto */
+a[href="/create"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a[href="/create"]:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    border-bottom: 2px solid #0056b3; /* Borde inferior azul más oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+    margin: 0; /* Eliminar margen del encabezado */
+    font-size: 2rem; /* Tamaño de fuente grande */
+}
+
+header nav ul {
+    list-style: none; /* Quitar puntos de lista */
+    padding: 0; /* Eliminar relleno */
+    margin: 0; /* Eliminar margen */
+}
+
+header nav ul li {
+    display: inline; /* Mostrar elementos de lista en línea */
+    margin-right: 20px; /* Espaciado entre los elementos */
+}
+
+header nav ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Estilo para el pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    border-top: 2px solid #0056b3; /* Borde superior azul más oscuro */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 20px; /* Espacio arriba del pie de página */
+}
+
+footer p {
+    margin: 0; /* Eliminar margen del párrafo */
+    font-size: 1rem; /* Tamaño de fuente */
 }
