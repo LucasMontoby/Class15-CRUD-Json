@@ -3,18 +3,18 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-const multer = require('multer');
+// const multer = require('multer');
 
 // Configuración de Multer
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'public/images');
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + '-' + file.originalname);
-    }
-});
-const upload = multer({ storage });
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//         cb(null, 'public/images');
+//     },
+//     filename: (req, file, cb) => {
+//         cb(null, Date.now() + '-' + file.originalname);
+//     }
+// });
+// const upload = multer({ storage });
 
 // Middlewares
 app.use(bodyParser.json());
